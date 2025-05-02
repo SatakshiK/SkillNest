@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send a Request</title>
+    <style>
+        body {
+            background-color: #fefae0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: #606c38;
+        }
+
+        .request-button {
+            background-color: #283618;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .request-button:hover {
+            background-color: #606c38;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Want to Send a Request?</h1>
+    <p>Click the button below to go to our request form!</p>
+
+    <button class="request-button" onclick="goToForm()">Request</button>
+
+    <script>
+        function goToForm() {
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScz2uGgEBWekmhmxZG6Fwg6s4SaGe5XEc0_-3yupIrfduTNdQ/viewform?usp=header";
+        }
+    </script>
+
+</body>
+</html>
