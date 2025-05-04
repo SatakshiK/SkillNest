@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #c658a0 0%, #dec1a1 100%);
+    background: linear-gradient(135deg, #3c6aa9  0%,  #c75d60          100%);
     color: white;
     padding: 60px 30px;
     text-align: center;
@@ -89,7 +89,7 @@ main h2 {
 
 /* For both Request and Upload buttons */
 .request-btn {
-    background-color: #d3d3dc67; /* Blue color similar to the header */
+    background-color: #d3d3dc23; /* Blue color similar to the header */
     color: rgb(12, 11, 11);
     padding: 12px 24px;
     text-decoration: none;
@@ -103,11 +103,11 @@ main h2 {
 }
 
 .request-btn:hover {
-    background-color: #c7c9d921; /* Darker blue on hover */
+    background-color: #3c69a939; /* Darker blue on hover */
 }
 /* For the Request and Upload buttons */
 .upload-btn {
-    background-color: #d3d3dc67; /* Blue color similar to the header */
+    background-color: #d3d3dc23; /* Blue color similar to the header */
     color: rgb(12, 11, 11);
     padding: 10px 35px;
     text-decoration: none;
@@ -121,7 +121,7 @@ main h2 {
 }
 
 .upload-btn:hover{
-    background-color: #c7c9d921; /* Darker blue on hover */
+    background-color: #c75d602d; /* Darker blue on hover */
 }
 
 .top-buttons {
