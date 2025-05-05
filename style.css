@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Global styles (unchanged) */
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +12,35 @@ body {
     line-height: 1.6;
 }
 
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.top-buttons button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: rgba(221, 221, 230, 0.24);
+    color: #f1f9f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.top-buttons button:hover {
+    background-color: #e8f5e95a;
+}
+
+
+/* Updated header styles */
 header {
     background: linear-gradient(135deg, #3c6aa9  0%,  #c75d60          100%);
     color: white;
     padding: 60px 30px;
     text-align: center;
 }
-
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -30,19 +51,28 @@ header p {
     margin-bottom: 20px;
 }
 
-.search-container {
-    margin-top: 20px;
-}
 
-.search-container input {
-    padding: 10px 15px;
-    width: 400px;
-    max-width: 90%;
+
+.request-btn, .upload-btn {
+    background-color: #d3d3dc03;
+    color: rgb(240, 236, 236);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.326);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
     border: none;
     border-radius: 25px;
-    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
+.request-btn:hover, .upload-btn:hover {
+    background-color: #e5e9ee17;
+}
+
+/* Main content styles */
 main {
     padding: 40px 20px;
 }
@@ -54,6 +84,7 @@ main h2 {
     color: #333;
 }
 
+/* Skills container styles */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -87,62 +118,7 @@ main h2 {
     font-size: 1.5rem;
 }
 
-/* For both Request and Upload buttons */
-.request-btn {
-    background-color: #d3d3dc23; /* Blue color similar to the header */
-    color: rgb(12, 11, 11);
-    padding: 12px 24px;
-    text-decoration: none;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px; /* Rounded corners */
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-.request-btn:hover {
-    background-color: #3c69a939; /* Darker blue on hover */
-}
-/* For the Request and Upload buttons */
-.upload-btn {
-    background-color: #d3d3dc23; /* Blue color similar to the header */
-    color: rgb(12, 11, 11);
-    padding: 10px 35px;
-    text-decoration: none;
-    font-size: 1rem;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-.upload-btn:hover{
-    background-color: #c75d602d; /* Darker blue on hover */
-}
-
-.top-buttons {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-.top-buttons button {
-    margin-right: 10px;
-    padding: 8px 16px;
-    background-color: rgba(221, 221, 230, 0.24);
-    color: #f1f9f2;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.top-buttons button:hover {
-    background-color: #e8f5e95a;
-}
-
+/* Footer styles (unchanged) */
 footer {
     background-color: #8b8787;
     color: white;
@@ -150,9 +126,11 @@ footer {
     padding: 30px 20px;
     margin-top: 50px;
 }
+
 footer h3 {
     margin-bottom: 15px;
 }
+
 footer input, footer textarea {
     width: 80%;
     padding: 10px;
@@ -160,6 +138,7 @@ footer input, footer textarea {
     border: none;
     border-radius: 5px;
 }
+
 footer button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -169,7 +148,7 @@ footer button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 footer button:hover {
     background-color: #45a049;
 }
-
