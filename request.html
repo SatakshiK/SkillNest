@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Send a Request</title>
-    <style>
-        body {
-            background-color: #fefae0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-        }
+  <meta charset="UTF-8">
+  <title>Uploaded Skills</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #3c6aa9, #c75d60);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 40px;
+    }
 
-        h1 {
-            color: #606c38;
-        }
+    h1 {
+      color:rgb(254, 255, 253);
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
 
-        .request-button {
-            background-color: #283618;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    p {
+      color:rgb(248, 249, 242);
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
 
-        .request-button:hover {
-            background-color: #606c38;
-        }
-    </style>
+    iframe {
+      width: 95%;
+      height: 80vh;
+      border: none;
+      background-color: transparent;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Want to Send a Request?</h1>
-    <p>Click the button below to go to our request form!</p>
+  <h1>Uploaded Skills</h1>
+  <p>Below are the skill uploads from other users. Reach out and connect!</p>
 
-    <button class="request-button" onclick="goToForm()">Request</button>
-
-    <script>
-        function goToForm() {
-            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScz2uGgEBWekmhmxZG6Fwg6s4SaGe5XEc0_-3yupIrfduTNdQ/viewform?usp=header";
-        }
-    </script>
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5QioO2YyK5BVHvQN0fc3zlDcNWV94pYhWgSOTxugmTTr_MTlf2J3eHKCCBD94bPNaOkI61jtkEfme/pubhtml"   
+    allowfullscreen>
+  </iframe>
 
 </body>
 </html>
